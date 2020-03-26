@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VidePlayer</title>
+    <link rel="icon" href="data:;base64,=" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/progress.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fe2ad25054.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Custom Player</h1>
+    <video
+      src="./video/gone.mp4"
+      id="video"
+      class="screen"
+      poster="./img/poster.png"
+    ></video>
+    <div class="controls">
+      <button class="btn" id="play"><i class="fas fa-play "></i></button>
+      <button class="btn" id="stop"><i class="fas fa-stop "></i></button>
+      <input
+        type="range"
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+      />
+      <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #34495e;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+h1 {
+  margin: 50px 0 0;
+}
+.figure-container {
+  /* fill заполнение внутри фигур svg fill цвет линий */
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+.game-container {
+  position: relative;
+  padding: 20px 30px;
+  margin: 0 auto;
+  height: 350px;
+  width: 450px;
+  margin-top: 20px;
+}
+.figure-part {
+  display: none;
+}
+.wrong-letters-containers {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  text-align: right;
+  flex-direction: column;
+}
+.word {
+  display: flex;
+  justify-content: center;
+}
+.wrong-letters-containers p {
+  margin: 0 0 5px;
+}
+
+.wrong-letters-containers span {
+  font-size: 24px;
+}
+
+.word .letter {
+  border-bottom: 3px solid #2980b9;
+  font-size: 30px;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: showModal;
+  animation-duration: 1s;
+  display: none;
+}
+
+.popup {
+  background-color: #2980b9;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  color: #2980b9;
+  border: 0;
+  margin-top: 15px;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+.popup button:active {
+  transform: scale(0.98);
+}
+.popup button:focus {
+  outline: 0;
+}
+
+.notication-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.notication-container p {
+  margin: 0;
+}
+
+.notication-container.show {
+  transform: translateY(-50px);
+}
+
+@keyframes showModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forn Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="form">
+        <h2>Register with Us</h2>
+
+        <div class="form-control">
+          <label for="userName">User Name</label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Enter User Name"
+            data-name="User Name"
+          />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="userEmail">User Email</label>
+          <input
+            type="text"
+            id="userEmail"
+            placeholder="Enter User Email"
+            data-name="User Email"
+          />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="userPassword">User Password</label>
+          <input
+            type="password"
+            id="userPassword"
+            placeholder="Enter User Password"
+            data-name="User Password"
+          />
+          <small>Error Password</small>
+        </div>
+
+        <div class="form-control">
+          <label for="userPassword2">User Password</label>
+          <input
+            type="password"
+            id="userPassword2"
+            placeholder="Enter User Password again"
+            data-name="User Password"
+          />
+          <small>Error Password</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

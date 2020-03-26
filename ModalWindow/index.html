@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Modal Window</title>
+  </head>
+  <body>
+    <nav>
+      <div class="log">
+        <img
+          src="https://cdn0.iconfinder.com/data/icons/user-interface-vol-3-12/66/68-512.png"
+          alt="user"
+        />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Porfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+    
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <h1>Landing Page</h1>
+      <p>
+        Далеко-далеко за словесными горами в стране гласных и согласных, живут
+        рыбные тексты.
+      </p>
+      <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <div class="container">
+      <h2>Содержание</h2>
+      <p>
+        Далеко-далеко за словесными, горами в стране гласных и согласных живут
+        рыбные тексты. Назад приставка они путь, продолжил подзаголовок, текста
+        оксмокс последний имени, вопрос вдали скатился подпоясал снова
+        парадигматическая над залетают. Выйти, правилами.
+      </p>
+      <p>
+        Далеко-далеко за словесными горами в стране гласных и согласных живут
+        рыбные тексты. Оксмокс пунктуация одна страна вдали наш имеет ручеек
+        реторический ему!
+      </p>
+      <h2>Еще немного информации</h2>
+      <p>
+        Далеко-далеко за словесными горами в стране гласных и согласных живут
+        рыбные тексты. Одна, строчка решила. Предложения там знаках однажды
+        возвращайся сих букв.
+      </p>
+      <h2>Преимущества</h2>
+      <ul>
+        <li>преимущество 1</li>
+        <li>преимущество 2</li>
+        <li>преимущество 3</li>
+      </ul>
+
+      <p>
+        Далеко-далеко за словесными горами, в стране гласных и согласных живут
+        рыбные тексты. От всех грамматики назад имени своего. Оксмокс которое
+        запятых ведущими образ продолжил, пустился дорогу живет запятой толку
+        заголовок взгляд вершину страна. Великий злых эта необходимыми ipsum
+        пунктуация залетают решила первую буквенных. Напоивший свой страна
+        грустный взгляд безорфографичный рыбными она алфавит журчит инициал он
+        большого себя снова жизни, родного скатился гор эта меня текстов свою
+        несколько на берегу даль ты заголовок. Даль, подпоясал.
+      </p>
+    </div>
+
+    <!-- Модал окно -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Регистрация</h3>
+        </div>
+        <div class="modal-content">
+          <p>Зарегистрируйтесь для поддержки </p>
+          <form  class="modal-form">
+            <div>
+              <label for="name">Имя</label>
+              <input type="text" id="name" class="form-input"  placeholder="Введите имя">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="Email" id="email" class="form-input" placeholder="Введите Email">
+            </div>
+            <div>
+              <label for="password">Пароль</label>
+              <input type="password" id="password" class="form-input" placeholder="Введите пароль">
+            </div>
+            <div>
+              <label for="password2">Повторите пароль</label>
+              <input type="password" id="password2" class="form-input" placeholder="Повторите пароль">
+            </div>
+            <input type="submit" class="submit-btn" value="Отправить"/>
+          </form>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
