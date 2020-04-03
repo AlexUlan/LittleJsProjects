@@ -3,10 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
+    <button class="settings-btn" id="settings-btn">
+      <i class="fas fas-cog"></i>
+    </button>
+
+    <div class="settings" id="settings">
+      <form class="settings-form">
+        <div>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Speed Typing</h2>
+      <small>Type the following: </small>
+      <h1 id="word">TEST</h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Type the word here..."
+      />
+
+      <p class="time-container">Time left: <span id="time">10s</span></p>
+      <p class="score-container">Score: <span id="score">0</span></p>
+      <div id="end-game-container" class="end-game-container"></div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
